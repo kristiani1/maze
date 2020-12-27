@@ -9,8 +9,8 @@ const {
 } = Matter;
 
 
-const cellsHorizontal = 10;
-const cellsVertical = 14;
+const cellsHorizontal = 15;
+const cellsVertical = 11;
 const width = window.innerWidth;
 const height = window.innerHeight;
 
@@ -196,7 +196,7 @@ World.add(world, ball);
 
 document.addEventListener('keydown', event => {
     const {x,y} = ball.velocity;
-
+    
     if (event.keyCode === 87) {
         Body.setVelocity(ball, {x, y: y - 5});
     }
